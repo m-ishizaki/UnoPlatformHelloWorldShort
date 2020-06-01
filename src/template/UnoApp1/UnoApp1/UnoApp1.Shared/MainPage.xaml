@@ -7,7 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="10">
+        <StackPanel>
+            <TextBlock Text="Hello, C# Tokyo world!" Margin="20" FontSize="30" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox x:Name="textbox1" HorizontalAlignment="Stretch"/>
+                <Button x:Name="button1" Content="Show" Grid.Column="1" Click="button1_Click"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Page>
