@@ -10,15 +10,25 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="10">
         <StackPanel>
             <TextBlock Text="Hello, C# Tokyo world!" Margin="20" FontSize="30" />
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                
-                <TextBox x:Name="textbox1" HorizontalAlignment="Stretch"/>
-                <Button x:Name="button1" Content="Show" Grid.Column="1" Click="button1_Click"/>
-            </Grid>
+
+            <TextBox x:Name="textbox1"/>
+            <Button x:Name="button1" Content="Show" Click="button1_Click"/>
+
+            <TextBox/>
+            <TextBox/>
+            <Button Content="Text"/>
+            <TextBlock />
+
+            <ListView ItemsSource="{Binding}" DataContext="{Binding}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Image}"/>
+                            <TextBlock Text="{Binding Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackPanel>
     </Grid>
 </Page>
