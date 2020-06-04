@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UnoApp1.Shared;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +27,20 @@ namespace UnoApp1
         public MainPage()
         {
             this.InitializeComponent();
+
+            this.DataContext = new MainPageViewModel();
+        }
+
+        private async void button1_Click(object sender, RoutedEventArgs e)
+        {
+            await new MessageDialog(textbox1.Text).ShowAsync();
+        }
+
+        private void listView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var value = e.ClickedItem as Spetialty;
+
+            this.Frame.Navigate(typeof(SecondPage), value);
         }
     }
 }

@@ -7,7 +7,33 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="10">
+        <StackPanel>
+            <TextBlock Text="Hello, C# Tokyo world!" Margin="20" FontSize="30" />
+
+            <TextBox x:Name="textbox1"/>
+            <Button x:Name="button1" Content="Show" Click="button1_Click"/>
+
+            <TextBox Text="{Binding FirstText}"/>
+            <TextBox Text="{Binding SecondText}"/>
+            <Button Content="Text" Command="{Binding TextCommand}"/>
+            <TextBlock Text="{Binding Text}"/>
+
+            <TextBlock />
+
+            <Button Content="Get" Command="{Binding GetCommand}"/>
+
+            <ListView ItemsSource="{Binding}" DataContext="{Binding Specialties}"
+                      ItemClick="listView_ItemClick" IsItemClickEnabled="true" SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Image}" Width="40"/>
+                            <TextBlock Text="{Binding Name}" Margin="5" FontSize="20"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
     </Grid>
 </Page>
