@@ -17,6 +17,8 @@
             <TextBlock Text="{Binding Description}"/>
             <TextBlock Text="ですね"/>
             <Button Content="GoNext" Click="Button_Click_GoBack"/>
+            <TextBlock Text="あなたのプラットフォームは"/>
+            <TextBlock x:Name="platform"/>
         </StackPanel>
     </Grid>
 </Page>
