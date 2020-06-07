@@ -8,7 +8,7 @@ namespace UnoApp1.Shared
 {
     class MainPageViewModel : BindableBase
     {
-        private readonly HttpClient _httpClient = new HttpClient();
+        private static readonly HttpClient _httpClient = new HttpClient();
 
         private string _firstText;
         private string _secondText;
@@ -23,12 +23,19 @@ namespace UnoApp1.Shared
         public ICommand TextCommand { get; }
         public ICommand GetCommand { get; }
 
-        public MainPageViewModel() {
+        public MainPageViewModel()
+        {
             TextCommand = new Command { Action = OnText };
             GetCommand = new Command { Action = OnGet };
         }
 
         private void OnText(object parameter) => Text = FirstText + SecondText;
-        private async void OnGet(object parameter) => Specialties = JsonSerializer.Deserialize<Spetialty[]>(await _httpClient.GetStringAsync("https://raw.githubusercontent.com/m-ishizaki/UnoHelloWorld2/master/src/api/saitamas.json"));
+        private async void OnGet(object parameter) => Specialties = JsonSerializer.Deserialize<Spetialty[]>
+            (
+                await _httpClient.GetStringAsync
+                (
+                    "https://raw.githubusercontent.com/m-ishizaki/UnoPlatformHelloWorldShort/master/src/api/saitamas.json"
+                )
+            );
     }
 }
