@@ -11,12 +11,12 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="あなたの選択は"/>
-            <Image Text="{Binding Image}"/>
+            <Image Source="{Binding Image}" Height="100"/>
             <TextBlock Text="{Binding Name}" FontSize="20"/>
             <TextBlock Text="解説"/>
             <TextBlock Text="{Binding Description}"/>
             <TextBlock Text="ですね"/>
-            <Button Content="GoNext" Click="Button_Click_GoBack"/>
+            <Button Content="&lt; GoBack" Click="Button_Click_GoBack"/>
             <TextBlock Text="あなたのプラットフォームは"/>
             <TextBlock x:Name="platform"/>
         </StackPanel>

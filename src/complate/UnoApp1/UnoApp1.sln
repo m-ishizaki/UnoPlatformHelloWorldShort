@@ -19,7 +19,10 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UnoApp1\UnoApp1.Shared\UnoApp1.Shared.projitems*{18740b29-ab63-4867-98e9-849fac038b7c}*SharedItemsImports = 5
 		UnoApp1\UnoApp1.Shared\UnoApp1.Shared.projitems*{1cccd07b-8681-46d8-8e8c-13895792619e}*SharedItemsImports = 4
+		UnoApp1\UnoApp1.Shared\UnoApp1.Shared.projitems*{1dddb74a-9fc4-430c-9430-afc3dbb772dc}*SharedItemsImports = 4
+		UnoApp1\UnoApp1.Shared\UnoApp1.Shared.projitems*{270dbc4d-a692-4144-9efc-a12fc513573a}*SharedItemsImports = 4
 		UnoApp1\UnoApp1.Shared\UnoApp1.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		UnoApp1\UnoApp1.Shared\UnoApp1.Shared.projitems*{ba6a298c-7d4a-4751-ac88-2d597b4ad2e5}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
