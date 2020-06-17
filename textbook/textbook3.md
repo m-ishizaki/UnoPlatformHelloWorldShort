@@ -26,7 +26,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+        <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
     </Grid>
 </Page>
 ```
@@ -175,7 +175,6 @@ namespace UnoApp1
 ## 実行結果
 
 <img src="image0302.jpg" width=350/>
-<img src="image0303.jpg" width=350/>
 
 ボタンをクリックすると、**TextBox** の値がポップアップメッセージダイアログ表示されます。  
 
