@@ -4,10 +4,10 @@
 1. [プロジェクト(ソリューション)の新規作成](./textbook2.md)  
 1. [イベント処理](./textbook3.md)  
 1. [データバインディング](./textbook4.md)  
-1. [WebAPI と一覧表示](./textbook6.md)  
-1. [ふたつめの画面](./textbook7.md)  
-1. [画面遷移](./textbook8.md)  
-1. [プラットフォーム毎の処理](./textbook9.md)  
+1. [WebAPI と一覧表示](./textbook5.md)  
+1. [ふたつめの画面](./textbook6.md)  
+1. [画面遷移](./textbook7.md)  
+1. [プラットフォーム毎の処理](./textbook8.md)  
 
 **※** もし手順書通りに作業してもうまくいかない場合、参考にしてください。  
 
