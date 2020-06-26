@@ -54,7 +54,6 @@ namespace UnoApp1.Shared
             this.DataContext = e.Parameter;
 
             base.OnNavigatedTo(e);
-
         }
     }
 }
