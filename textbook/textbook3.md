@@ -95,7 +95,7 @@
   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <StackPanel>
       <TextBlock Text="Hello, C# Tokyo world!" Margin="20" FontSize="30" />
-    <StackPanel>
+    </StackPanel>
   </Grid>
 </Page>
 ```
@@ -136,14 +136,14 @@
       <TextBox x:Name="textbox1"/>
       <Button x:Name="button1" Content="Show" Click="button1_Click"/>
 
-    <StackPanel>
+    </StackPanel>
   </Grid>
 </Page>
 ```
 ボタンクリック時のメソッドを **MainPage.xaml.cs** に追加します。
 
 ```cs
-private void Button1_Click(object sender, RoutedEventArgs e)
+private async void button1_Click(object sender, RoutedEventArgs e)
 {
     await new MessageDialog(textbox1.Text).ShowAsync();
 }
@@ -152,6 +152,7 @@ private void Button1_Click(object sender, RoutedEventArgs e)
 **MainPage.xaml.cs** 全体は次のようになります。
 
 ```cs
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -164,7 +165,7 @@ namespace UnoApp1
             this.InitializeComponent();
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private async void button1_Click(object sender, RoutedEventArgs e)
         {
             await new MessageDialog(textbox1.Text).ShowAsync();
         }
