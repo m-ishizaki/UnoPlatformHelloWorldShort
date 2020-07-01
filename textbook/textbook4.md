@@ -57,8 +57,6 @@ DataBinding 用に画面に要素を追加します。
 
 ```cs
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
 namespace UnoApp1.Shared
@@ -80,10 +78,8 @@ namespace UnoApp1.Shared
 
 ```cs
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace UnoApp1.Shared
 {
