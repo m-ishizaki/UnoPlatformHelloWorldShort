@@ -152,6 +152,8 @@ private async void button1_Click(object sender, RoutedEventArgs e)
 **MainPage.xaml.cs** 全体は次のようになります。
 
 ```cs
+using System;
+using UnoApp1.Shared;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
