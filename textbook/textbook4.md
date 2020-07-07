@@ -103,7 +103,6 @@ namespace UnoApp1.Shared
 こちらも、ファイルは作成済みなので **MainPageViewModel.cs** ファイルを開いて次のように編集してください。
 
 ```cs
-using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.Json;
@@ -145,21 +144,10 @@ this.DataContext = new MainPageViewModel();
 
 ```cs
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnoApp1.Shared;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 namespace UnoApp1
 {
