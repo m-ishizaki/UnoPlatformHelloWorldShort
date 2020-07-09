@@ -71,9 +71,6 @@
 今回は、クラス自体は追加済みになっています。**Spetialty.cs** を開いて次のように編集してください。
 
 ```cs
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace UnoApp1.Shared
 {
