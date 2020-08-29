@@ -70,6 +70,20 @@ https://docs.microsoft.com/ja-jp/xamarin/android/get-started/installation/androi
 - Xamarin.iOS のインストール  
 https://docs.microsoft.com/ja-jp/xamarin/ios/get-started/installation/
 
+# (必須手順) プロジェクトを実行
+
+環境構築は ```**まだ終わっていません**```。ここで ```**必ず**``` Uno Platform アプリのプロジェクトを実行してください。  
+```**IDE 等をインストールしただけでは準備は整っていません。**```  
+
+Uno Platform は (Uno Platform に限らず最近は) 作るアプリの種類/プラットフォーム毎に初回の実行時に必要なファイルをダウンロードして環境を構築します。  
+```**プロジェクトを実行できてはじめて開発環境が整ったと言えます。**```  
+
+このリポジトリ内にこのサンプルのテンプレートとゴールのソリューションを置いてあります。  
+
+- [テンプレート ソリューション  ディレクトリ](../src/template/UnoApp1/)  
+- [ゴール ソリューション  ディレクトリ](../src/complate/UnoApp1/)  
+
+このソリューションを開いて実行できることを確認してください。  
 
 
 [< | Topへ](./top.md) | [次へ | >](./textbook2.md)
