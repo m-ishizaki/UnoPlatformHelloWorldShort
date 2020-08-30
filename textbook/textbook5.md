@@ -109,7 +109,7 @@ GetCommand = new Command { Action = OnGet };
 **Command** で行われる処理 (ボタンクリック時の処理) を行うメソッドを追加します。
 
 ```cs
-private async void OnGet(object parameter) => Specialties = JsonSerializerDeserialize<Spetialty[]>
+private async void OnGet(object parameter) => Specialties = JsonSerializer.Deserialize<Spetialty[]>
     (
         await _httpClient.GetStringAsync
         (
