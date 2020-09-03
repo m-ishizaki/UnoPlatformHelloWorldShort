@@ -74,7 +74,7 @@ https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/preprocessor-d
 #endif
 
 #if WINDOWS_UWP
-           platform.Text = "UWP";
+            platform.Text = "UWP";
 #endif
 
 #if __ANDROID__
@@ -82,7 +82,7 @@ https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/preprocessor-d
 #endif
 
 #if __IOS__
-           platform.Text = "iOS";
+            platform.Text = "iOS";
 #endif
 ```
 
@@ -106,7 +106,7 @@ namespace UnoApp1.Shared
 #endif
 
 #if WINDOWS_UWP
-           platform.Text = "UWP";
+            platform.Text = "UWP";
 #endif
 
 #if __ANDROID__
@@ -114,7 +114,7 @@ namespace UnoApp1.Shared
 #endif
 
 #if __IOS__
-           platform.Text = "iOS";
+            platform.Text = "iOS";
 #endif
         }
 
