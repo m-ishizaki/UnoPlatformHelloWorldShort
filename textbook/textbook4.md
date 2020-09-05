@@ -11,8 +11,8 @@
 DataBinding 用に画面に要素を追加します。
 
 ```xml
-<TextBox Text="{Binding FirstText}"/>
-<TextBox Text="{Binding SecondText}"/>
+<TextBox Text="{Binding FirstText, Mode=TwoWay}"/>
+<TextBox Text="{Binding SecondText, Mode=TwoWay}"/>
 <Button Content="Text" Command="{Binding TextCommand}"/>
 <TextBlock Text="{Binding Text}"/>
 ```
@@ -36,8 +36,8 @@ DataBinding 用に画面に要素を追加します。
             <TextBox x:Name="textbox1"/>
             <Button x:Name="button1" Content="Show" Click="button1_Click"/>
 
-            <TextBox Text="{Binding FirstText}"/>
-            <TextBox Text="{Binding SecondText}"/>
+            <TextBox Text="{Binding FirstText, Mode=TwoWay}"/>
+            <TextBox Text="{Binding SecondText, Mode=TwoWay}"/>
             <Button Content="Text" Command="{Binding TextCommand}"/>
             <TextBlock Text="{Binding Text}"/>
         </StackPanel>
