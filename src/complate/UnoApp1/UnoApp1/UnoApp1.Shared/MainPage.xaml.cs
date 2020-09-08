@@ -22,7 +22,7 @@ namespace UnoApp1
 
         private void listView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var value = e.ClickedItem as Spetialty;
+            var value = e.ClickedItem;
 
             this.Frame.Navigate(typeof(SecondPage), value);
         }
