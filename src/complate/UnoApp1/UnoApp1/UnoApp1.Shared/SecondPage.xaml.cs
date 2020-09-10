@@ -15,7 +15,7 @@ namespace UnoApp1.Shared
 #endif
 
 #if WINDOWS_UWP
-           platform.Text = "UWP";
+            platform.Text = "UWP";
 #endif
 
 #if __ANDROID__
@@ -23,7 +23,7 @@ namespace UnoApp1.Shared
 #endif
 
 #if __IOS__
-           platform.Text = "iOS";
+            platform.Text = "iOS";
 #endif
         }
 
