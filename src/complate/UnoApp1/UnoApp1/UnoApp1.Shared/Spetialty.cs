@@ -1,5 +1,4 @@
-﻿
-namespace UnoApp1.Shared
+﻿namespace UnoApp1.Shared
 {
     class Spetialty
     {
